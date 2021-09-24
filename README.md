@@ -21,6 +21,14 @@ Just use weak references from built-in `weakref` module! Weakref is able to kill
 
 `ReferenceError: weakly-referenced object no longer exists`
 
+
+# [Lowkey aliases in Python Shell mode](https://github.com/skelly37/funny-experiments/blob/main/py-shell-aliases.py)
+### Idea:
+I wanted to quickly clear the screen, to exit Python, to quickly generate random numbers — things one normally does in Python Shell. 
+### Solution:
+Create some .py file, declare classes that will handle your tasks as the "aliases" and initialize objects with desired name. `self.__repr__()` is the method you summon when you enter the variable name in Python shell. Just make it do what you want to achieve and return it (or empty string to avoid errors). When the file is ready, make alias for python in your shell's config, e.g.:
+`"alias python = python -i /home/skelly37/pyshutils.py"` (nushell)
+
 # NOTE
 I can't say it's fully my approach. It's just my ideas, my code refactoring, my ability to search, copy and paste AND OBVIOUSLY the community!
 
