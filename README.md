@@ -23,3 +23,6 @@ Just use weak references from built-in `weakref` module! Weakref is able to kill
 
 # NOTE
 I can't say it's fully my approach. It's just my ideas, my code refactoring, my ability to search, copy and paste AND OBVIOUSLY the community!
+
+# Like the content?
+Why don't you make a pull request (or issue) with your idea?
