@@ -7,6 +7,7 @@ class Foo:
 		ref = super().__new__(cls)
 		Foo.refs.append(ref)
 
+		#You have to do it this way to summon __init__()
 		cls.__init__(ref, *args, **kwargs)
 		return weakref.proxy(ref)
 
