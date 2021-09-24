@@ -3,12 +3,12 @@ It's not about WHY?, it's about WHY NOT! Don't expect any reproducable and usefu
 
 
 # [Putting destructor into Python's class constructor](https://github.com/skelly37/funny-experiments/blob/main/constructor-destructor.py)
-## Idea:
+### Idea:
 I wanted to create fancy data validation — ifs and exceptions are lame and boring :) 
-## Solution:
+### Solution:
 Just use weak references from built-in `weakref` module! Weakref is able to kill itself, so you can destroy all the references and free up the memory. Very dirty hack, don't use it, kids :)
 
-## Output:
+### Output:
 `Destroying itself... FF`
 
 `Destroying itself... BB`
